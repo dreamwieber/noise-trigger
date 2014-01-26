@@ -47,6 +47,8 @@
     // Create block channel ('noise generator')
     AEBlockChannel *noiseChannel = [AEBlockChannel channelWithBlock:^(const AudioTimeStamp *time, UInt32 frames, AudioBufferList *audio) {
         
+        ViewController *vc = weakVc; // strong reference from weak
+        
         UInt32 numberOfBuffers = audio->mNumberBuffers;
         
         for (int i = 0; i < numberOfBuffers; i++) {
@@ -62,7 +64,6 @@
             // If the key isn't held down, fill the buffer with zeros (silence)
             // and return
             
-            ViewController *vc = weakVc; // strong reference from weak
             
             if (!vc->_keyDown) {
                 bzero(output, frames * sizeof(float));
