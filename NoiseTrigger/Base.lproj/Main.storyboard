@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ene-tB-PI4"/>
+                        <viewControllerLayoutGuide type="bottom" id="jqt-An-1Ct"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="w4u-XO-Vr8">
+                                <rect key="frame" x="56" y="165" width="209" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="238" id="SR0-s2-7yb"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="238" id="a4k-pa-hPj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="44"/>
+                                <state key="normal" title="Make Noise">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonDown:" destination="vXZ-lx-hvc" eventType="touchDragInside" id="91W-VS-n1D"/>
+                                    <action selector="buttonDown:" destination="vXZ-lx-hvc" eventType="touchDragEnter" id="TDn-Bc-5ML"/>
+                                    <action selector="buttonDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="iFN-fn-jgM"/>
+                                    <action selector="buttonUp:" destination="vXZ-lx-hvc" eventType="touchDragExit" id="52i-bM-h8K"/>
+                                    <action selector="buttonUp:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7AM-IQ-qiI"/>
+                                    <action selector="buttonUp:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="gzW-Wg-kXa"/>
+                                    <action selector="buttonUp:" destination="vXZ-lx-hvc" eventType="touchDragOutside" id="xQZ-4Z-ikW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="w4u-XO-Vr8" secondAttribute="centerY" id="Z8R-jJ-MNN"/>
+                            <constraint firstAttribute="centerX" secondItem="w4u-XO-Vr8" secondAttribute="centerX" id="oVb-8a-Ab1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
