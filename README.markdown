@@ -5,6 +5,7 @@ Demonstrates basic user interaction with a Core Audio thread. A class member of 
 
 Run:
         git submodule init
+        
         git submodule update
 
 Drag TheAmazingAudioEngine/TheAmazingAudioEngine.xcproject into your project. Xcode will prompt you to convert to a workspace.
